@@ -1,0 +1,6 @@
+{
+  "name": "Oasis Live '25 Stage Visuals Template Studio",
+  "description": "Production-ready, customizable stage visuals web template replicating the iconic Oasis Live '25 stadium visual chapters with live customization and code export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

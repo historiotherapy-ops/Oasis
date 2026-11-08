@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-condensed: 'Bebas Neue', sans-serif;
+    --font-editorial: 'Newsreader', Georgia, serif;
+    --font-typewriter: 'Special Elite', 'Courier New', monospace;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-condensed {
+  font-family: var(--font-condensed);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-typewriter {
+  font-family: var(--font-typewriter);
+}
+
+/* Stadium LED Wall Pixel Grid Mesh */
+.led-pixel-mesh {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.45) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* Stadium Screen Halftone / Dot Array */
+.stadium-halftone {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 6px 6px;
+}
+
+/* CRT Scanlines */
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.4) 50%
+  );
+  background-size: 100% 4px;
+}
+
+/* Vintage Masking Tape */
+.masking-tape {
+  background: rgba(238, 230, 205, 0.88);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom scrollbar for preview */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Smooth continuous cosmic drift */
+@keyframes cosmicDrift {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-cosmic-drift {
+  animation: cosmicDrift 20s linear infinite;
+}
